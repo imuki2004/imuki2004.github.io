@@ -1,0 +1,25 @@
+# Site settings
+title: Imangali Mukhambetzhanuly - Data Science Portfolio
+description: Final-year Data Science student at CityU HK | Passionate about ML, GenAI, and Data Analytics | Seeking opportunities in AI & Freelance
+baseurl: ""  # Empty for user site (imuki2004.github.io)
+url: "https://imuki2004.github.io"
+author:
+  name: Imangali Mukhambetzhanuly
+  email: imuki.hk@gmail.com
+  linkedin: https://linkedin.com/in/imuki
+  github: https://github.com/imuki2004
+
+# Theme and plugins
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+# Build settings
+markdown: kramdown
+permalink: pretty
