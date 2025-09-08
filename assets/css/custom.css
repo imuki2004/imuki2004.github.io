@@ -1,8 +1,24 @@
-/* Custom styles for your header and footer */
-nav ul {
+/* Extend minima styles */
+.site-header {
+    border-bottom: 1px solid #e8e8e8;
+  }
+  
+  nav ul {
     list-style: none;
     display: flex;
     gap: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li a {
+    text-decoration: none;
+    color: #111;
+    font-weight: 400;
+  }
+  
+  nav li a:hover {
+    text-decoration: underline;
   }
   
   footer {
@@ -10,4 +26,5 @@ nav ul {
     margin-top: 2rem;
     padding: 1rem;
     border-top: 1px solid #e8e8e8;
+    background-color: #fdfdfd;
   }
