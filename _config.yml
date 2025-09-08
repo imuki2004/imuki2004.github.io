@@ -10,7 +10,7 @@ author:
   github: https://github.com/imuki2004
 
 # Theme and plugins
-theme: jekyll-theme-minima
+theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
