@@ -5,7 +5,7 @@ title: Home - Imangali's Portfolio
 
 <div class="home-content">
   <div class="profile-section">
-    <img src="{{ '/assets/images/profile_picture.jpg' | relative_url }}" alt="Imangali Mukhambetzhanuly, Data Science Student" class="profile-image">
+    <img src="{{ '/assets/images/me_compressed.jpg' | relative_url }}" alt="Imangali Mukhambetzhanuly, Data Science Student" class="profile-image">
   </div>
   <div class="text-section">
     <h1>Welcome to My Portfolio</h1>
