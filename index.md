@@ -28,5 +28,4 @@ title: Home - Imangali's Portfolio
 - [Experience](/experience)
 - [Projects](/projects)
 - [Certifications](/certifications)
-- [Hobbies](/hobbies)
 - [Contact](mailto:imuki.hk@gmail.com)
