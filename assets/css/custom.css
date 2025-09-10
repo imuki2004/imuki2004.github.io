@@ -28,3 +28,306 @@
   .site-nav li a:hover {
     text-decoration: underline;
   }
+  
+  /* Beautiful home page layout */
+  .home-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+    margin: 3rem 0;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  }
+  
+  .profile-section {
+    flex: 0 0 180px;
+    text-align: center;
+  }
+  
+  .profile-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-image:hover {
+    transform: scale(1.05);
+  }
+  
+  .text-section {
+    flex: 1;
+    padding-left: 1rem;
+  }
+  
+  .text-section h1 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  
+  .text-section p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+  
+  /* Navigation section styling for home page */
+  .home h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin: 3rem 0 1.5rem 0;
+    font-weight: 600;
+  }
+  
+  .home ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .home li {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .home li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+  
+  .home li a {
+    display: block;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  /* Beautiful styling for all other pages */
+  .post {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    padding: 2rem;
+    margin: 2rem 0;
+  }
+  
+  .post-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(44, 62, 80, 0.1);
+  }
+  
+  .post-title {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+  }
+  
+  .post-content {
+    color: #555;
+    line-height: 1.8;
+  }
+  
+  .post-content h1 {
+    color: #2c3e50;
+    font-weight: 600;
+    margin: 2rem 0 1rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #3498db;
+    font-size: 2rem;
+  }
+  
+  .post-content h2 {
+    color: #34495e;
+    font-weight: 600;
+    margin: 1.5rem 0 1rem 0;
+    font-size: 1.5rem;
+  }
+  
+  .post-content ul {
+    margin: 1rem 0;
+    padding-left: 0;
+  }
+  
+  .post-content li {
+    background: #fff;
+    margin: 0.8rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    list-style: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .post-content li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  }
+  
+  .post-content li strong {
+    color: #2c3e50;
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Nested bullet points styling */
+  .post-content li ul {
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+    background: none;
+    box-shadow: none;
+  }
+  
+  .post-content li ul li {
+    background: none;
+    box-shadow: none;
+    padding: 0.3rem 0;
+    margin: 0.2rem 0;
+    border-radius: 0;
+    list-style: disc;
+    font-size: 0.95rem;
+    transition: none;
+  }
+  
+  .post-content li ul li:hover {
+    transform: none;
+    background: none;
+    color: #2c3e50;
+  }
+  
+  /* Back to Home link styling */
+  .post-content p:last-child a[href="/"] {
+    display: inline-block;
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+  }
+  
+  .post-content p:last-child a[href="/"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+    background: linear-gradient(135deg, #2980b9, #3498db);
+  }
+  
+  /* Centered footer styling */
+  footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem 1rem;
+    border-top: 1px solid #e8e8e8;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    color: #666;
+  }
+  
+  footer p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+  }
+  
+  footer a {
+    color: #2a7ae2;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .home-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 2rem;
+      padding: 1.5rem;
+    }
+    
+    .profile-section {
+      flex: none;
+    }
+    
+    .profile-image {
+      width: 150px;
+      height: 150px;
+    }
+    
+    .text-section {
+      padding-left: 0;
+    }
+    
+    .site-nav ul {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .home ul {
+      grid-template-columns: 1fr;
+    }
+    
+    .post {
+      padding: 1.5rem;
+      margin: 1rem 0;
+    }
+    
+    .post-title {
+      font-size: 2rem;
+    }
+    
+    .post-content h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+  /* Simple Technical Skills */
+  .skills-overview {
+    margin: 2rem 0;
+    color: #555;
+    line-height: 1.8;
+  }
+  
+  .skills-overview p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  
+  .skills-overview strong {
+    color: #2c3e50;
+    font-weight: 600;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .cv-link {
+      padding: 0.6rem 1.2rem;
+      font-size: 0.9rem;
+    }
+    
+    .skills-overview {
+      margin: 1.5rem 0;
+    }
+  }

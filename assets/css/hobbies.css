@@ -1,0 +1,271 @@
+/* Hobbies page styling */
+.hobbies-container {
+    margin: 2rem 0;
+  }
+  
+  .hobby-section {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 2.5rem;
+    margin: 3rem 0;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    border-left: 5px solid #3498db;
+    transition: all 0.3s ease;
+  }
+  
+  .hobby-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+  }
+  
+  .hobby-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .hobby-title {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white !important;
+    padding: 1.5rem 2rem;
+    border-radius: 15px;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+    box-shadow: 0 8px 20px rgba(52, 152, 219, 0.3);
+  }
+  
+  /* FC Kairat specific styling - Yellow and Black theme */
+  .hobby-section:first-child .hobby-title {
+    background: linear-gradient(135deg, #f1c40f, #f39c12);
+    color: #000000 !important;
+    box-shadow: 0 8px 20px rgba(241, 196, 15, 0.3);
+  }
+
+  /* Valorant specific styling - Red and Black theme */
+  .hobby-section:nth-child(2) .hobby-title {
+    background: linear-gradient(135deg, #ff4655, #e63946);
+    color: white !important;
+    box-shadow: 0 8px 20px rgba(255, 70, 85, 0.3);
+  }
+  
+  .hobby-subtitle {
+    color: #7f8c8d;
+    font-style: italic;
+    font-size: 1.1rem;
+  }
+  
+  /* Valorant Section */
+  .valorant-stats {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+  
+  .stat-card {
+    background: linear-gradient(135deg, #ff4655, #e63946);
+    color: white;
+    padding: 1.5rem 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(255, 70, 85, 0.3);
+    transition: all 0.3s ease;
+    max-width: 300px;
+  }
+  
+  .stat-card:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(255, 70, 85, 0.4);
+  }
+  
+  .stat-label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .stat-value {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .agents-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+  
+  .agent-card {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid #ff4655;
+    min-width: 120px;
+  }
+  
+  .agent-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 30px rgba(255, 70, 85, 0.4);
+    border-color: #ffffff;
+  }
+  
+  .agent-name {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  
+  .agent-role {
+    color: #ff4655;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .tracker-link {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff4655, #e63946);
+    color: white !important;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    text-decoration: none !important;
+    font-weight: 600;
+    margin: 1.5rem 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(255, 70, 85, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .tracker-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(255, 70, 85, 0.5);
+    color: white !important;
+  }
+  
+  /* Football Section - FC Kairat Yellow/Black theme */
+  .football-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+  
+  .team-info {
+    background: linear-gradient(135deg, #212529, #343a40);
+    color: #f1c40f;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(33, 37, 41, 0.3);
+    border: 2px solid #f1c40f;
+  }
+  
+  .team-logo {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1rem auto;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 3px solid #f1c40f;
+  }
+  
+  .team-logo img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    border-radius: 50%;
+  }
+  
+  .team-info h3 {
+    color: #f1c40f;
+    margin-bottom: 1rem;
+  }
+  
+  .fan-since {
+    background: linear-gradient(135deg, #f1c40f, #f39c12);
+    color: #212529;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(241, 196, 15, 0.3);
+  }
+  
+  .fan-since h3 {
+    color: #212529;
+    margin-bottom: 1rem;
+  }
+  
+  .years-count {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 1rem 0;
+    color: #212529;
+  }
+  
+  .video-section {
+    background: linear-gradient(135deg, #212529, #343a40);
+    color: #f1c40f;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    margin: 2rem 0;
+    box-shadow: 0 10px 25px rgba(33, 37, 41, 0.3);
+    border: 2px solid #f1c40f;
+  }
+  
+  .video-section h3 {
+    color: #f1c40f;
+    margin-bottom: 1rem;
+  }
+  
+  .video-container {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .video-container video {
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(241, 196, 15, 0.3);
+    transition: all 0.3s ease;
+    border: 2px solid #f1c40f;
+  }
+  
+  .video-container video:hover {
+    box-shadow: 0 12px 30px rgba(241, 196, 15, 0.5);
+    transform: scale(1.02);
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .hobby-section {
+      padding: 1.5rem;
+    }
+    
+    .football-stats {
+      grid-template-columns: 1fr;
+    }
+    
+    .agents-grid {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+    
+    .hobby-title {
+      font-size: 1.5rem;
+      padding: 1rem 1.5rem;
+    }
+  }

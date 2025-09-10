@@ -1,0 +1,160 @@
+/* Projects page styling */
+.projects-container {
+    margin: 2rem 0;
+  }
+  
+  /* Simple category headers - left aligned, no boxes */
+  .projects-container h2 {
+    color: #2c3e50;
+    font-weight: 600;
+    margin: 3rem 0 1.5rem 0;
+    font-size: 1.8rem;
+    text-align: left;
+    padding: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+  }
+  
+  .project-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-left: 5px solid #3498db;
+    transition: all 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  }
+  
+  .project-header h3 {
+    background: linear-gradient(135deg, #3498db, #2980b9) !important;
+    color: white !important;
+    margin: 0 0 1rem 0;
+    padding: 1.5rem 2rem !important;
+    border: none !important;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center !important;
+    border-radius: 15px !important;
+    box-shadow: 0 8px 20px rgba(52, 152, 219, 0.3);
+  }
+  
+  .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    align-items: center;
+  }
+  
+  .tag {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  
+  .project-tags img {
+    height: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-tags img:hover {
+    transform: scale(1.1);
+  }
+  
+  .project-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+  
+  .project-description ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .project-description li {
+    background: rgba(52, 152, 219, 0.05);
+    padding: 1rem;
+    margin: 0.8rem 0;
+    border-radius: 10px;
+    border-left: 3px solid #3498db;
+    transition: all 0.3s ease;
+  }
+  
+  .project-description li:hover {
+    background: rgba(52, 152, 219, 0.1);
+    transform: translateX(5px);
+  }
+  
+  .project-diagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .diagram-placeholder {
+    background: rgba(52, 152, 219, 0.1);
+    border: 2px dashed #3498db;
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+  .diagram-placeholder:hover {
+    background: rgba(52, 152, 219, 0.15);
+    border-color: #2980b9;
+  }
+  
+  .diagram-placeholder span {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+  }
+  
+  .diagram-placeholder p {
+    color: #2c3e50;
+    font-weight: 600;
+    margin: 0.5rem 0;
+  }
+  
+  .diagram-placeholder small {
+    color: #7f8c8d;
+    font-style: italic;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .project-content {
+      grid-template-columns: 1fr;
+    }
+    
+    .project-tags {
+      justify-content: center;
+    }
+    
+    .diagram-placeholder {
+      min-height: 150px;
+      padding: 1.5rem;
+    }
+  }

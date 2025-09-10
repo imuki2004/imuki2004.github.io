@@ -8,6 +8,12 @@
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="stylesheet" href="{{ "/assets/css/custom.css" | relative_url }}">
+  
+  {% if page.stylesheets %}
+    {% for stylesheet in page.stylesheets %}
+      <link rel="stylesheet" href="{{ '/assets/css/' | append: stylesheet | append: '.css' | relative_url }}">
+    {% endfor %}
+  {% endif %}
 </head>
 <body>
   {% include header.html %}
